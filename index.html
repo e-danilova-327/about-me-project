@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>This Is Me</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+          <a href="index.html" class="active">HOME</a>
+          <a href="timeline.html">WALKING THROUGH LIFE</a>
+          <a href="extra.html">EXTRA</a>
+      </div>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script> 
+    </header>
+    <section>
+      <h1>Hello there!</h1>
+      <button onclick="typeWriter()">Let's meet!</button>
+      <p id="demo"></p>
+      <script>
+        var i = 0;
+        var txt = 'Hi! I am Elena Danilova and I salute you on this brand new page about me! It is my first attempt to make a responsive website, so please do not judge strictly. It is just the first try, my first step into the IT universe! Make yourself comfortable, browse this website and learn a little bit about me. If shortly - I am a dreamer and a doer, who is in search of some changes at the moment. So from a lover of numbers (being an accountant for over 7 years) I am now transforming into a lover of letters in the try of learning coding. Support me and let us begin the journey!';
+        var speed = 50;
+        
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        </script>
+        <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    </section>
+  </body>
+</html>
